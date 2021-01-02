@@ -1,0 +1,21 @@
+spring:
+  # 应用名称
+  application:
+    name: consumer
+
+  # dubbo配置
+  dubbo:
+    registry: zookeeper://192.168.182.129:2181
+
+server:
+  servlet:
+    # 设置字符编码
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    # 设置上下文根
+    context-path: /
+
+  # 端口号
+  port: 8080
