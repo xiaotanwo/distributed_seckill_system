@@ -4,9 +4,9 @@ This is a distributed second kill system, use the centos7，docker，nginx, zook
 # 系统环境
 ## Linux环境：centos7 [CentOS-7-x86_64-DVD-2009]<br>安装docker：yum install docker [Version:1.13.1]
 ## 在docker中拉取镜像：
-1、mysql [Server version: 8.0.22 MySQL Community Server - GPL]  端口映射 [3306:3306]
+1、mysql [Server version: 8.0.22 MySQL Community Server - GPL]  端口映射 [3306->3306]
 <br>2、nginx
-<br>3、zookeeper
+<br>3、zookeeper [Zookeeper version: 3.4.14] 端口映射 [2181->2181]
 <br>4、rebbitmq
 <br>5、redis
 
