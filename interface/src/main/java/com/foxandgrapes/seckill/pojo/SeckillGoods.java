@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * @author tsk
@@ -19,46 +20,41 @@ import java.math.BigDecimal;
 @ToString
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = false)
-@TableName("t_goods")
-public class Goods implements Serializable {
+@TableName("t_seckill_goods")
+public class SeckillGoods implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 商品ID
+     * 秒杀商品ID
      */
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
-     * 商品名称
+     * 商品ID
      */
-    private String goodsName;
+    private Long goodsId;
 
     /**
-     * 商品标题
+     * 秒杀价格
      */
-    private String goodsTitle;
+    private BigDecimal seckillPrice;
 
     /**
-     * 商品图片
+     * 库存数量
      */
-    private String goodsImg;
+    private Integer stockCount;
 
     /**
-     * 商品详情
+     * 秒杀开始时间
      */
-    private String goodsDetail;
+    private Date startDate;
 
     /**
-     * 商品价格
+     * 秒杀结束时间
      */
-    private BigDecimal goodsPrice;
-
-    /**
-     * 商品库存，-1表示没有限制
-     */
-    private Integer goodsStock;
+    private Date endDate;
 
 
 }

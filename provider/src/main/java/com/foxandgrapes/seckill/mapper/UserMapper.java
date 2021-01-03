@@ -1,6 +1,6 @@
 package com.foxandgrapes.seckill.mapper;
 
-import com.foxandgrapes.seckill.pojo.Goods;
+import com.foxandgrapes.seckill.pojo.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author tsk
  * @since 2021-01-03
  */
-public interface GoodsMapper extends BaseMapper<Goods> {
+public interface UserMapper extends BaseMapper<User> {
 
 }

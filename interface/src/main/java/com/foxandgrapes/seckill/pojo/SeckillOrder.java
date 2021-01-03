@@ -7,7 +7,6 @@ import lombok.*;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 /**
  * @author tsk
@@ -19,46 +18,31 @@ import java.math.BigDecimal;
 @ToString
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = false)
-@TableName("t_goods")
-public class Goods implements Serializable {
+@TableName("t_seckill_order")
+public class SeckillOrder implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 商品ID
+     * 秒杀订单ID
      */
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
-     * 商品名称
+     * 用户ID
      */
-    private String goodsName;
+    private Long userId;
 
     /**
-     * 商品标题
+     * 订单ID
      */
-    private String goodsTitle;
+    private Long orderId;
 
     /**
-     * 商品图片
+     * 商品ID
      */
-    private String goodsImg;
-
-    /**
-     * 商品详情
-     */
-    private String goodsDetail;
-
-    /**
-     * 商品价格
-     */
-    private BigDecimal goodsPrice;
-
-    /**
-     * 商品库存，-1表示没有限制
-     */
-    private Integer goodsStock;
+    private Long goodsId;
 
 
 }
