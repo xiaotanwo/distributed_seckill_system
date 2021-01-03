@@ -7,7 +7,7 @@ This is a distributed second kill system, use the centos7，docker，nginx, zook
 1、mysql [Server version: 8.0.22 MySQL Community Server - GPL]  端口映射 [3306->3306]
 <br>2、nginx
 <br>3、zookeeper [Zookeeper version: 3.4.14] 端口映射 [2181->2181]
-<br>4、rebbitmq
+<br>4、rebbitmq [Redis server v=6.0.9] 端口映射 [6379->6379]
 <br>5、redis
 
 # 项目前期工作

@@ -14,17 +14,12 @@ spring:
     url: jdbc:mysql://192.168.182.129:3306/d_seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
 
   # dubbo配置
   dubbo:
     server: true
     registry: zookeeper://192.168.182.129:2181
-
-# Mybatis-plus配置
-mybatis-plus:
-  mapper-locations: classpath*:/mapper/*Mapper.xml
-  # 配置MyBatis数据返回类型别名（默认别名为类名）
-  type-aliases-package: com.foxandgrapes.seckill.model
 
 # 端口号
 server:

@@ -14,12 +14,20 @@
     <artifactId>interface</artifactId>
 
     <dependencies>
+
         <!-- lombok -->
-        <!--<dependency>-->
-        <!--    <groupId>org.projectlombok</groupId>-->
-        <!--    <artifactId>lombok</artifactId>-->
-        <!--    <optional>true</optional>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- MyBatis Plus 依赖 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

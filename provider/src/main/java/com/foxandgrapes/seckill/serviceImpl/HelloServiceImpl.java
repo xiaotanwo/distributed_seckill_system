@@ -1,6 +1,7 @@
-package com.foxandgrapes.seckill.service;
+package com.foxandgrapes.seckill.serviceImpl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.foxandgrapes.seckill.service.HelloService;
 import org.springframework.stereotype.Component;
 
 @Component

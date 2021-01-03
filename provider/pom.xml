@@ -82,6 +82,12 @@
         <!--    <artifactId>spring-boot-starter-validation</artifactId>-->
         <!--</dependency>-->
 
+        <!-- druid连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+
         <!-- 接口工程 -->
         <dependency>
             <groupId>com.foxandgrapes.seckill</groupId>
